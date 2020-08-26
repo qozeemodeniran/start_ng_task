@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en"> <!--language definition-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Page</title>
+</head>
+<body>
+<div>
+	<img src="contact_img.png" width="120" height="120">
+</div>
+<h3>Contact Me</h3> <br/>
+<form action="processform.php" method="post">
+	<p>
+		<label for="fname">First Name</label> <br/>
+			<input type="text" name="fname" placeholder="Enter your First Name"/>
+	</p>
+
+	<p>
+		<label for="lname">Last Name</label> <br/>
+			<input type="text" name="lname" placeholder="Enter you Last Name"/>
+	</p>
+
+	<p>
+		<label for="email">Email</label> <br/>
+			<input type="email" name="email" placeholder="Enter your Email" required />
+	</p>
+
+	<!--Creating a dropdown list for department selection...-->
+	<p>
+		<label for="department">Department</label> <br/>
+		<select name="department">
+			<option>Select Department</option>
+			<option>HR</option>
+			<option>Marketing</option>
+			<option>Board</option>
+			<option>Kitchen</option>
+		</select>
+	</p>
+
+	<p>
+		<label for="gender">Gender</label><br/>
+			<input type="radio" name="gender"/> Female
+				<input type="radio" name="gender"/> Male 
+	</p>
+
+	<p>
+		<label for="email">Your Message</label> <br/>
+		<textarea name="message" col="5" row="5"></textarea>
+	</p>
+
+	<p>
+		<input type="checkbox" name="TandC" required /> By checking this box, you agree to our terms and conditions.
+	</p>
+
+	<button type="submit">Send Message</button>
+</form>
+</body>
+</html>
+
+
+
